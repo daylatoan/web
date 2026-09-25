@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MillionHood ($MILLIONHOOD) | Cat. Hood up. Nobody talks.</title>
+  <meta name="description" content="MillionHood ($MILLIONHOOD): a cat in a hoodie who runs the block, a meme coin on Robinhood chain. The boss, the block, the contract, the chart, and a caption maker.">
+  <meta property="og:title" content="MillionHood: Cat. Hood up. Nobody talks.">
+  <meta property="og:description" content="Cat in a bear hoodie. One corner. Hood up.">
+  <meta property="og:image" content="assets/mascot.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#BAE23B">
+  <link rel="icon" href="assets/favicon.png">
+
+  <!-- Google Fonts: Grenze, Bricolage Grotesque, DM Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@800&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    (function(d){
+      d.classList.add('js');
+      var seen = false;
+      try { seen = sessionStorage.getItem('mh-intro') === '1'; } catch (e) {}
+      if (seen || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) d.classList.add('no-intro');
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the page</a>
+
+  <!-- Intro curtain (JS only, once per session) -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-in">
+      <img class="intro-badge" src="assets/token-badge.jpg" alt="">
+      <p class="intro-word"><span>Hood</span> <span>up.</span></p>
+      <span class="mark intro-mark"><i></i><i></i><i></i></span>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <!-- Header Nav -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="MillionHood, back to the top">
+        <img class="brand-logo" src="assets/brand-banner.png" alt="MillionHood">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#gang">The boss</a></li>
+        <li><a href="#lore">The block</a></li>
+        <li><a href="#contract">Contract</a></li>
+        <li><a href="#make">Make one</a></li>
+        <li><a href="#pictures">Pictures</a></li>
+      </ul>
+      <a class="btn btn-ink" href="#">Buy $MILLIONHOOD</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero" id="top" aria-labelledby="hero-h">
+      <div class="wrap hero-wrap">
+        <div class="hero-copy">
+          <p class="sign">
+            <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span><b>$MILLIONHOOD</b>, a meme coin on Robinhood chain</span>
+          </p>
+          <h1 class="display" id="hero-h">
+            <span class="tl-line"><span>Cat.</span></span>
+            <span class="tl-line"><span>Hood up.</span></span>
+            <span class="tl-line"><span>Nobody talks.</span></span>
+          </h1>
+          <p class="lede">One small cat who runs the entire block. He is cute, and he knows it. Do not bring it up.</p>
+          <div class="cta-row">
+            <a class="btn btn-ink" href="#">Buy $MILLIONHOOD</a>
+            <a class="btn btn-line" href="#">Make one</a>
+          </div>
+          <p class="credit"><b>MillionHood:</b> Bear hood up, eyes on the block. Nobody makes a move without him.</p>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-art-inner">
+            <img class="cat" src="assets/token-badge.jpg" alt="MillionHood token badge with Millio in bear hood" fetchpriority="high">
+            <!-- Graffiti spray crown over Millio -->
+            <svg class="crown" viewBox="0 0 120 84" aria-hidden="true" focusable="false">
+              <path pathLength="1" d="M18 72 L8 28 L35 48 L57 11 L85 46 L113 21 L103 70 Z" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="8" cy="18" r="5" fill="currentColor"/>
+              <circle cx="57" cy="3" r="5.5" fill="currentColor"/>
+              <circle cx="114" cy="12" r="4.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Sofa Strip (Numbers) -->
+    <section class="strip" aria-label="The numbers">
+      <div class="wrap strip-grid">
+        <div class="card"><div class="v" data-count="1000000000">1,000,000,000</div><div class="l">Supply</div></div>
+        <div class="card"><div class="v">0 / 0</div><div class="l">Tax</div></div>
+        <div class="card"><div class="v">Robinhood</div><div class="l">Chain</div></div>
+        <div class="card"><div class="v">0</div><div class="l">Snitches</div></div>
+      </div>
+    </section>
+
+    <!-- Ticker band -->
+    <div class="ticker-zone" aria-hidden="true">
+      <div class="ticker">
+        <div class="ticker-track" id="ticker">
+          <span>Hood up</span><i>✦</i><span>Nobody talks</span><i>✦</i><span>$MILLIONHOOD</span><i>✦</i><span>The corner is taken</span><i>✦</i><span>Robinhood chain</span><i>✦</i><span>We were never here</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Boss Section -->
+    <section class="gang" id="gang" aria-labelledby="gang-h">
+      <div class="wrap">
+        <div class="gang-head" data-reveal>
+          <h2 id="gang-h">The boss</h2>
+          <p>One name everybody on the block already knows. Different fits, same attitude, zero words spoken.</p>
+        </div>
+        <div class="gang-grid">
+          <!-- Member 1: Camel Fit -->
+          <article class="member m-ginger" data-reveal>
+            <div class="portrait" role="img" aria-label="MillionHood in camel bear hood" style="background-image:url(assets/gang/millio.jpg)"></div>
+            <div class="member-body">
+              <div class="aka"><h3>MillionHood</h3><span>the classic</span></div>
+              <dl class="spec">
+                <div><dt>Coat</dt><dd>Ginger tabby</dd></div>
+                <div><dt>Colours</dt><dd>Camel bear hood</dd></div>
+                <div><dt>Post</dt><dd>Corner sofa</dd></div>
+                <div><dt>Known for</dt><dd>The friendly face</dd></div>
+              </dl>
+              <p>Looks like the friendly one. Has let people believe that for years. Backed by millions.</p>
+            </div>
+          </article>
+
+          <!-- Member 2: Shadow Fit -->
+          <article class="member m-tux" data-reveal style="--rd:80ms">
+            <div class="portrait" role="img" aria-label="MillionHood in black bear hood" style="background-image:url(assets/gang/socks.jpg)"></div>
+            <div class="member-body">
+              <div class="aka"><h3>MillionHood</h3><span>the boss fit</span></div>
+              <dl class="spec">
+                <div><dt>Coat</dt><dd>Tuxedo black</dd></div>
+                <div><dt>Colours</dt><dd>Black bear hood</dd></div>
+                <div><dt>Post</dt><dd>The middle</dd></div>
+                <div><dt>Known for</dt><dd>Running it</dd></div>
+              </dl>
+              <p>Took the middle seat on the first day. Nobody voted. Nobody is going to.</p>
+            </div>
+          </article>
+
+          <!-- Member 3: Stealth Fit -->
+          <article class="member m-grey" data-reveal style="--rd:160ms">
+            <div class="portrait" role="img" aria-label="MillionHood in grey bear hood" style="background-image:url(assets/gang/smoke.jpg)"></div>
+            <div class="member-body">
+              <div class="aka"><h3>MillionHood</h3><span>the stealth</span></div>
+              <dl class="spec">
+                <div><dt>Coat</dt><dd>Silver tabby</dd></div>
+                <div><dt>Colours</dt><dd>Heather grey hood</dd></div>
+                <div><dt>Post</dt><dd>Right armrest</dd></div>
+                <div><dt>Known for</dt><dd>Seeing everything</dd></div>
+              </dl>
+              <p>Has not blinked in a single photo. Watches the whole block from the sofa and says nothing.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Block Section -->
+    <section class="block" id="lore" aria-labelledby="lore-h">
+      <figure class="block-banner">
+        <img src="assets/banner-block.jpg" alt="MillionHood backed on the block with glowing neon sign" loading="lazy">
+      </figure>
+      <div class="wrap block-grid">
+        <div class="lore-panel" data-reveal>
+          <h2 id="lore-h">The block</h2>
+          <p class="lore">Somebody dragged an old leather sofa out onto the corner, and by morning MillionHood had it. He sits right in the middle, hood pulled low, and nobody has ever seen him move. The rats moved off the block that same week. Ask what he does all day and he will look at you until you leave.</p>
+        </div>
+        <div class="block-side" data-reveal style="--rd:80ms">
+          <h3>Rules of the block</h3>
+          <ol class="rules">
+            <li><span>Nobody talks.</span></li>
+            <li><span>Hood stays up.</span></li>
+            <li><span>The sofa belongs to MillionHood.<small>Nobody voted.</small></span></li>
+            <li><span>The corner is taken.<small>It was like that when you got here.</small></span></li>
+            <li><span>You did not see him.<small>You were never here either.</small></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contract Section -->
+    <section class="contract" id="contract" aria-labelledby="ca-h">
+      <div class="wrap contract-grid">
+        <div class="contract-head" data-reveal>
+          <h2 id="ca-h">Contract</h2>
+          <p>Get the address from this page. Anybody on the corner handing you a different one is not with him.</p>
+          <dl class="checks">
+            <div><dt>Network</dt><dd>Robinhood chain</dd></div>
+            <div><dt>Length</dt><dd>42 characters, starts 0x</dd></div>
+            <div><dt>Source</dt><dd>This page, before anywhere else</dd></div>
+          </dl>
+        </div>
+        <div class="ca-panel" data-reveal style="--rd:80ms">
+          <div class="ca-top">
+            <span><b>$MILLIONHOOD</b> on Robinhood chain</span>
+            <span>Updating</span>
+          </div>
+          <code class="ca" id="ca">Updating...</code>
+          <div class="ca-actions">
+            <button class="btn btn-lime" type="button" id="copy-ca">Copy address</button>
+            <a class="btn btn-line" href="#">Chart on GeckoTerminal</a>
+            <span class="ca-flash" id="ca-flash" role="status" aria-live="polite"></span>
+          </div>
+          <p class="ca-note">This is the address. Match it to the swap, every character, on the same network, before you buy anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Make One (Meme Generator) -->
+    <section class="make" id="make" aria-labelledby="make-h">
+      <div class="wrap make-grid">
+        <div class="make-copy" data-reveal>
+          <h2 id="make-h">Make one</h2>
+          <p>Give him a line. He will never say it out loud, but the picture will.</p>
+          <div class="field">
+            <label for="line">Your line</label>
+            <input id="line" type="text" maxlength="60" value="we were never here" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="chips" role="group" aria-label="Lines to start from">
+            <button class="chip" type="button" aria-pressed="true">we were never here</button>
+            <button class="chip" type="button" aria-pressed="false">nobody saw anything</button>
+            <button class="chip" type="button" aria-pressed="false">it was like that when we got here</button>
+            <button class="chip" type="button" aria-pressed="false">ask around</button>
+            <button class="chip" type="button" aria-pressed="false">this corner is taken</button>
+            <button class="chip" type="button" aria-pressed="false">we're just little guys</button>
+          </div>
+          <div class="make-actions">
+            <button class="btn btn-ink" type="button" id="dl">Download the picture</button>
+            <span class="make-note" id="make-note" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+        <figure class="make-preview" data-reveal style="--rd:80ms">
+          <div class="frame">
+            <img src="assets/make/base.jpg" alt="The MillionHood picture with your line written across the top" id="make-img" loading="lazy">
+            <p class="cap" id="cap" aria-hidden="true"><span>WE WERE NEVER HERE</span></p>
+          </div>
+          <span class="preview-tag" aria-hidden="true">Saves as a PNG</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Pictures Section -->
+    <section class="pictures" id="pictures" aria-labelledby="pic-h">
+      <div class="wrap">
+        <div class="pic-head" data-reveal>
+          <h2 id="pic-h">Pictures</h2>
+          <p>Take them. Download one, post one, put one in the group chat.</p>
+        </div>
+        <div class="gallery">
+          <!-- Meme 1 -->
+          <figure class="meme">
+            <img src="assets/memes/king-millio.jpg" alt="King Millio on the pillar">
+            <figcaption class="meme-cap">The King of the Block</figcaption>
+            <a class="meme-dl" href="assets/memes/king-millio.jpg" download="king-millio.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 2 -->
+          <figure class="meme">
+            <img src="assets/memes/elon-millio.jpg" alt="When Elon pulls up with Millio">
+            <figcaption class="meme-cap">When the chief believer pulls up</figcaption>
+            <a class="meme-dl" href="assets/memes/elon-millio.jpg" download="elon-millio.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 3 -->
+          <figure class="meme">
+            <img src="assets/memes/millio-solo.jpg" alt="Millio solo">
+            <figcaption class="meme-cap">We were never here</figcaption>
+            <a class="meme-dl" href="assets/memes/millio-solo.jpg" download="millio-solo.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 4 -->
+          <figure class="meme">
+            <img src="assets/memes/socks-solo.jpg" alt="Socks solo">
+            <figcaption class="meme-cap">Nobody voted. Nobody is going to.</figcaption>
+            <a class="meme-dl" href="assets/memes/socks-solo.jpg" download="socks-solo.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 5 -->
+          <figure class="meme">
+            <img src="assets/memes/smoke-solo.jpg" alt="Smoke solo">
+            <figcaption class="meme-cap">Has not blinked once</figcaption>
+            <a class="meme-dl" href="assets/memes/smoke-solo.jpg" download="smoke-solo.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 6 -->
+          <figure class="meme">
+            <img src="assets/memes/trio-sofa.jpg" alt="MillionHood on the sofa">
+            <figcaption class="meme-cap">One hood. One million strong.</figcaption>
+            <a class="meme-dl" href="assets/memes/trio-sofa.jpg" download="trio-sofa.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Meme 7 -->
+          <figure class="meme">
+            <img src="assets/memes/token-badge.jpg" alt="MillionHood token seal badge">
+            <figcaption class="meme-cap">The seal of the million</figcaption>
+            <a class="meme-dl" href="assets/memes/token-badge.jpg" download="token-badge.jpg">Download</a>
+            <a class="meme-share" href="#">Post it</a>
+          </figure>
+
+          <!-- Aside: More on X -->
+          <aside class="pic-more" aria-labelledby="more-h">
+            <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            <h3 class="gothic" id="more-h">More on X</h3>
+            <p>New pictures of MillionHood go up there first. Take those too.</p>
+            <a class="btn btn-ink" href="#">Follow on X</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="foot" aria-label="Footer">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="wordmark">
+          <img class="brand-logo" src="assets/brand-banner.png" alt="MillionHood">
+        </p>
+        <p class="foot-line">Cat. One corner. Still on the sofa.</p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="#gang">The boss</a></li>
+        <li><a href="#lore">The block</a></li>
+        <li><a href="#contract">Contract</a></li>
+        <li><a href="#make">Make one</a></li>
+        <li><a href="#pictures">Pictures</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">GeckoTerminal</a></li>
+      </ul>
+      <p class="disclaimer">$MILLIONHOOD is a meme coin with no intrinsic value and no expectation of return. It is for entertainment only. It is not affiliated with, endorsed by, or connected to Robinhood Markets, Robinhood chain, or any real person. Nothing on this page is advice of any kind, and anything you put in can go to zero. Verify the contract address on this page before you trust any other copy of it.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
