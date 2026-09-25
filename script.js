@@ -1,5 +1,5 @@
 /**
- * MillionHood ($MILLIONHOOD)
+ * MillionHood ($MILLIO)
  * Client-side interactions: scroll nav, intersection observer reveals,
  * CA copy to clipboard, and live Meme Maker canvas rendering/download.
  */

@@ -1,5 +1,5 @@
 /* ============================================================================
-   MILLIONHOOD ($MILLIONHOOD)
+   MILLIONHOOD ($MILLIO)
    Three cats who run one corner of the block.
    Mascot: Three kittens in camel, black and heather bear hoodies on a
    vibrant lime studio background, sitting on a dark espresso leather sofa.
@@ -145,6 +145,22 @@ h3{font-size:clamp(1.3rem,1.1rem + .6vw,1.6rem);line-height:1.1;letter-spacing:-
 .btn-line{color:var(--ink);background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
 .btn-line:hover{background-color:color-mix(in oklab,var(--ink) 6%,var(--lime))}
 
+/* --- social icon buttons --- */
+.icon-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:50%;flex:none;
+  color:var(--ink);text-decoration:none;
+  background-color:color-mix(in oklab,var(--studio) 55%,transparent);
+  box-shadow:inset 0 0 0 1.5px var(--rule);
+  transition:transform .18s var(--out),color .18s var(--out),background-color .18s var(--out),box-shadow .18s var(--out);
+}
+.icon-btn svg{width:19px;height:19px;display:block;fill:currentColor}
+.icon-btn:hover{
+  transform:translateY(-2px);color:var(--lime);background-color:var(--ink);
+  box-shadow:inset 0 0 0 1.5px var(--ink),var(--sh-1);
+}
+.icon-btn:active{transform:translateY(0);transition-duration:.06s}
+
 /* ============================== nav ============================== */
 .nav{
   position:sticky;top:0;z-index:50;height:64px;
@@ -173,6 +189,8 @@ h3{font-size:clamp(1.3rem,1.1rem + .6vw,1.6rem);line-height:1.1;letter-spacing:-
 }
 .nav-links a:hover{background-color:color-mix(in oklab,var(--ink) 8%,transparent)}
 .nav .btn{min-height:44px;padding:.65rem 1.15rem;font-size:.95rem}
+.nav-end{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.nav-social{display:flex;align-items:center;gap:.35rem}
 
 /* ============================== hero ============================== */
 .hero{
@@ -497,6 +515,20 @@ h3{font-size:clamp(1.3rem,1.1rem + .6vw,1.6rem);line-height:1.1;letter-spacing:-
 .wordmark .mark i + i{margin-left:-9px}
 .foot .mark i:nth-child(2){background:var(--tux);box-shadow:0 0 0 2px var(--ink),inset 0 0 0 2px var(--bone-3)}
 .foot-line{margin-top:.8rem;color:var(--bone-2);font-weight:500}
+.foot-social{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.social{
+  display:inline-flex;align-items:center;gap:.55rem;min-height:44px;padding:0 1.15rem;
+  border-radius:999px;text-decoration:none;white-space:nowrap;
+  font:600 .95rem/1 var(--sans);color:var(--bone);
+  box-shadow:inset 0 0 0 1.5px var(--rule-dark);
+  transition:transform .18s var(--out),color .18s var(--out),background-color .18s var(--out),box-shadow .18s var(--out);
+}
+.social svg{width:17px;height:17px;flex:none;fill:currentColor}
+.social:hover{
+  transform:translateY(-2px);color:var(--ink);background-color:var(--lime);
+  box-shadow:inset 0 0 0 1.5px var(--lime),var(--sh-1);
+}
+.social:active{transform:translateY(0);transition-duration:.06s}
 .foot-links{display:grid;grid-template-columns:1fr 1fr;gap:.1rem 1.5rem;list-style:none;margin:0;padding:0}
 .foot-links a{display:flex;align-items:center;min-height:44px;border-bottom:1px solid var(--rule-dark);text-decoration:none;font-weight:500;color:var(--bone);transition:color .18s var(--out);}
 .foot-links a:hover{color:var(--lime)}
@@ -630,7 +662,7 @@ h3{font-size:clamp(1.3rem,1.1rem + .6vw,1.6rem);line-height:1.1;letter-spacing:-
 }
 @media (max-width:1080px){
   .nav-links{display:none}
-  .nav .btn{margin-left:auto}
+  .nav-end{margin-left:auto}
   .hero-wrap{gap:clamp(1rem, 2vw, 2rem)}
 }
 @media (max-width:920px){
@@ -661,6 +693,12 @@ h3{font-size:clamp(1.3rem,1.1rem + .6vw,1.6rem);line-height:1.1;letter-spacing:-
   .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:560px){
+  .nav-in{gap:.6rem}
+  .nav-social{gap:.2rem}
+  .icon-btn{width:40px;height:40px}
+  .icon-btn svg{width:17px;height:17px}
+  .nav .btn{padding:.65rem .9rem}
+  .social{flex:1 1 auto;justify-content:center}
   .meme{grid-template-columns:1fr;grid-template-rows:auto 1fr auto auto}
   .meme-cap{font-size:.875rem}
   .meme-share{margin-top:.45rem}
