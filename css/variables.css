@@ -1,0 +1,108 @@
+/* ==========================================================================
+   CSS VARIABLES — GROK SUPER INTELLIGENCE ($GSI)
+   ========================================================================== */
+
+:root {
+  /* Brand Color Palette */
+  --color-primary-blue: #0866F9;
+  --color-deep-blue: #073EAC;
+  --color-electric-blue: #2A82FF;
+  --color-cape-red: #F51E32;
+  --color-cape-red-hover: #D41426;
+  --color-cape-red-glow: rgba(245, 30, 50, 0.4);
+  
+  --color-dark-navy: #080D21;
+  --color-surface-navy: #121B36;
+  --color-card-navy: #162244;
+  --color-card-hover: #1C2B54;
+  --color-border-navy: #20315C;
+  --color-border-glow: rgba(8, 102, 249, 0.45);
+  
+  --color-sunset-orange: #FF914D;
+  --color-sunset-glow: rgba(255, 145, 77, 0.3);
+  --color-golden-yellow: #FFD66B;
+  --color-gold-glow: rgba(255, 214, 107, 0.35);
+  
+  --color-white: #FFFFFF;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B8C3D9;
+  --color-text-muted: #7E8DA8;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  /* Gradients */
+  --gradient-hero: radial-gradient(circle at 50% 20%, rgba(8, 102, 249, 0.25) 0%, rgba(8, 13, 33, 0.95) 75%), #080D21;
+  --gradient-blue-glow: radial-gradient(circle, rgba(8, 102, 249, 0.35) 0%, rgba(8, 13, 33, 0) 70%);
+  --gradient-sunset-glow: radial-gradient(circle, rgba(255, 145, 77, 0.25) 0%, rgba(8, 13, 33, 0) 70%);
+  --gradient-card: linear-gradient(135deg, rgba(22, 34, 68, 0.85) 0%, rgba(18, 27, 54, 0.95) 100%);
+  --gradient-btn-primary: linear-gradient(135deg, #F51E32 0%, #D41426 100%);
+  --gradient-btn-secondary: linear-gradient(135deg, #0866F9 0%, #073EAC 100%);
+  --gradient-gold: linear-gradient(135deg, #FFD66B 0%, #FF914D 100%);
+  --gradient-border: linear-gradient(135deg, rgba(8, 102, 249, 0.6) 0%, rgba(245, 30, 50, 0.4) 50%, rgba(255, 145, 77, 0.6) 100%);
+
+  /* Typography */
+  --font-display: 'Barlow Condensed', 'Anton', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Sizes (Fluid Clamps) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.77rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 0.88rem + 0.3vw, 1.0625rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.6rem + 1.2vw, 2.75rem);
+  --text-4xl: clamp(2.25rem, 1.9rem + 1.8vw, 3.75rem);
+  --text-5xl: clamp(2.75rem, 2.2rem + 2.5vw, 4.5rem);
+  --text-hero: clamp(2.5rem, 2.1rem + 3.2vw, 5.25rem);
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-narrow: 960px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --header-height: 76px;
+  --header-height-mobile: 68px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-blue-glow: 0 0 24px rgba(8, 102, 249, 0.35);
+  --shadow-red-glow: 0 0 24px rgba(245, 30, 50, 0.35);
+  --shadow-gold-glow: 0 0 24px rgba(255, 214, 107, 0.3);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-indices */
+  --z-base: 1;
+  --z-decor: 5;
+  --z-card: 10;
+  --z-header: 100;
+  --z-modal: 500;
+  --z-toast: 1000;
+}

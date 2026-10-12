@@ -1,116 +1,61 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>CAT SI ($CSI) | The World's Cutest Baby AI Genius on Mars</title>
-  <meta name="description" content="CAT SI ($CSI): The first baby artificial superintelligence kitten astronaut piloting space exploration to Mars alongside Elon Musk. Web3 memetics fused with quantum compute.">
-  
-  <!-- Open Graph / Facebook -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grok Super Intelligence ($GSI) — The Superhero of the Meme Universe</title>
+  <meta name="description" content="An image of Grok wearing a cape—superintelligence is near .A community-run meme on Robinhood.">
+
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://catsi.online/">
-  <meta property="og:title" content="CAT SI ($CSI) — Baby AI Superintelligence on Mars">
-  <meta property="og:description" content="Conceiving the future of autonomous intelligence, one purr at a time. Armed with cosmic AI compute, cute whiskers, and a direct launch trajectory to Mars.">
-  <meta property="og:image" content="assets/IMG_3085.JPG">
+  <meta property="og:title" content="Grok Super Intelligence ($GSI)">
+  <meta property="og:description" content="An image of Grok wearing a cape—superintelligence is near .A community-run meme on Robinhood.">
+  <meta property="og:image" content="assets/cover 17.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://catsi.online/">
-  <meta property="twitter:title" content="CAT SI ($CSI) — Baby AI Superintelligence on Mars">
-  <meta property="twitter:description" content="The world's cutest superintelligent kitten astronaut piloting autonomous space exploration to Mars.">
-  <meta property="twitter:image" content="assets/IMG_3085.JPG">
-
-  <meta name="theme-color" content="#040711">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-  <!-- Google Fonts: Orbitron, Space Grotesk, JetBrains Mono -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./style.css?v=20261002-1">
-
-  <!-- Reduced motion & JS helper check -->
-  <script>
-    (function(d){
-      d.classList.remove('no-js');
-      d.classList.add('js');
-      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        d.classList.add('reduced-motion');
-      }
-    })(document.documentElement);
-  </script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/game.css">
 </head>
-<body id="top">
+<body>
 
-  <!-- Page Loader / Boot Sequence -->
-  <div class="loader" id="page-loader" aria-hidden="true">
-    <div class="loader-content">
-      <div class="loader-avatar-ring">
-        <img class="loader-avatar" src="assets/favicon.png" alt="CAT SI mascot">
-        <div class="loader-orbit"></div>
-      </div>
-      <div class="loader-brand">CAT SI</div>
-      <div class="loader-bar-wrap">
-        <div class="loader-bar" id="loader-bar"></div>
-      </div>
-      <div class="loader-status" id="loader-status">INITIALIZING NEURAL CORE...</div>
-    </div>
-  </div>
-
-  <!-- Background Ambience & Canvas Starfield -->
-  <canvas id="cosmic-canvas" class="cosmic-canvas" aria-hidden="true"></canvas>
-  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
-  <div class="cyber-grid" aria-hidden="true"></div>
-
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress" aria-hidden="true">
-    <div class="scroll-progress-fill" id="progress-bar"></div>
-  </div>
-
-  <!-- Main Fixed Navigation -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a class="nav-brand" href="#top" aria-label="CAT SI, back to top">
-        <div class="brand-avatar-box">
-          <img class="brand-avatar" src="assets/favicon.png" alt="CAT SI Logo">
-          <span class="status-dot-live"></span>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">CAT SI</span>
-          <span class="brand-badge">$CSI</span>
-        </div>
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#hero" class="brand-link" aria-label="Grok Super Intelligence Home">
+        <img src="assets/logo.png" alt="Grok Super Intelligence Logo" class="brand-logo" width="240" height="42">
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#mission">Mission</a></li>
-          <li><a class="nav-link" href="#intelligence">Intelligence</a></li>
-          <li><a class="nav-link" href="#terminal">Terminal</a></li>
-          <li><a class="nav-link" href="#archive">Archive</a></li>
-          <li><a class="nav-link" href="#community">Community</a></li>
-        </ul>
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link is-active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#token" class="nav-link">Token</a>
+        <a href="#game" class="nav-link">Game</a>
+        <a href="#community" class="nav-link">Community</a>
       </nav>
 
-      <!-- Nav Actions -->
-      <div class="nav-actions">
-        <div class="nav-socials">
-          <a class="nav-icon-link" href="https://x.com/catsionhood?s=11" target="_blank" rel="noopener noreferrer" aria-label="Follow CAT SI on X (Twitter)">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a class="nav-icon-link" href="https://t.me/catsionhood" target="_blank" rel="noopener noreferrer" aria-label="Join CAT SI on Telegram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.94 4.3 18.9 19.05c-.23 1.01-.83 1.26-1.68.79l-4.64-3.42-2.24 2.16c-.25.25-.45.45-.93.45l.33-4.72 8.58-7.75c.37-.33-.08-.52-.58-.19L7.16 13.1l-4.57-1.43c-.99-.31-1.01-.99.21-1.47l17.88-6.89c.83-.3 1.55.2 1.26.99z"/></svg>
-          </a>
-        </div>
-        <a class="btn btn-primary btn-shine" href="https://catsi.online/">
-          <span>Buy $CSI</span>
-          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <!-- Header Action -->
+      <div class="header-actions">
+        <a href="#community" class="btn btn-primary btn-header-cta btn-shimmer">
+          Join Community
         </a>
 
-        <!-- Mobile Hamburger Toggle -->
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -120,773 +65,570 @@
   </header>
 
   <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer" id="mobile-nav" aria-hidden="true">
-    <div class="mobile-drawer-inner">
-      <ul class="mobile-nav-list">
-        <li><a class="mobile-nav-link" href="#mission">Mission</a></li>
-        <li><a class="mobile-nav-link" href="#intelligence">Intelligence</a></li>
-        <li><a class="mobile-nav-link" href="#terminal">Terminal</a></li>
-        <li><a class="mobile-nav-link" href="#archive">Archive</a></li>
-        <li><a class="mobile-nav-link" href="#community">Community</a></li>
-      </ul>
-      <div class="mobile-drawer-cta">
-        <a class="btn btn-primary btn-block btn-shine" href="https://catsi.online/">
-          <span>Acquire $CSI</span>
-        </a>
-        <div class="mobile-social-row">
-          <a class="social-chip" href="https://x.com/catsionhood?s=11" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            <span>X.com</span>
-          </a>
-          <a class="social-chip" href="https://t.me/catsionhood" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24"><path d="M21.94 4.3 18.9 19.05c-.23 1.01-.83 1.26-1.68.79l-4.64-3.42-2.24 2.16c-.25.25-.45.45-.93.45l.33-4.72 8.58-7.75c.37-.33-.08-.52-.58-.19L7.16 13.1l-4.57-1.43c-.99-.31-1.01-.99.21-1.47l17.88-6.89c.83-.3 1.55.2 1.26.99z"/></svg>
-            <span>Telegram</span>
-          </a>
-        </div>
-      </div>
+  <div id="mobile-nav" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-list">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About GSI</a>
+      <a href="#token" class="mobile-nav-link">Token Facts</a>
+      <a href="#safety" class="mobile-nav-link">Safety</a>
+      <a href="#game" class="mobile-nav-link">Play GSI Game</a>
+      <a href="#community" class="mobile-nav-link">Community</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="#community" class="btn btn-primary btn-shimmer" style="width: 100%;">Join Community</a>
     </div>
   </div>
 
-  <main id="main-content">
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Particle Canvas Backdrop -->
+      <canvas id="particles-canvas"></canvas>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-container">
-        
-        <!-- Left: Copy & Telemetry -->
-        <div class="hero-copy">
-          <div class="eyebrow-hud">
-            <span class="hud-blink"></span>
-            <span>Contact : Update</span>
-          </div>
+      <!-- Ambient Glows -->
+      <div class="ambient-glow-blue hero-ambient-blue"></div>
+      <div class="ambient-glow-sunset hero-ambient-sunset"></div>
 
-          <h1 class="hero-title">
-            <span class="title-sub">AI WAS THE BEGINNING.</span>
-            <span class="title-main">SI IS THE EVOLUTION.</span>
-            <span class="title-gradient glitch-text" data-text="MEET CAT SI.">MEET CAT SI.</span>
-          </h1>
-
-          <p class="hero-desc">
-            Meet CAT SI — the world's cutest Super Intelligence kitten.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-shine" href="https://catsi.online/">
-              <span>Buy $CSI</span>
-              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#mission">
-              <span>Mission Telemetry</span>
-            </a>
-          </div>
-
-          <!-- Quick Telemetry HUD Bar -->
-          <div class="hero-specs-bar">
-            <div class="spec-pill">
-              <span class="spec-label">TICKER</span>
-              <span class="spec-val text-primary">$CSI</span>
-            </div>
-            <div class="spec-pill">
-              <span class="spec-label">NETWORK</span>
-              <span class="spec-val">ROBINHOOD</span>
-            </div>
-            <div class="spec-pill">
-              <span class="spec-label">TAX</span>
-              <span class="spec-val text-accent">UPDATE</span>
-            </div>
-            <div class="spec-pill">
-              <span class="spec-label">COMPUTE</span>
-              <span class="spec-val text-secondary">∞ PFLOPS</span>
-            </div>
-          </div>
+      <div class="container hero-content">
+        <!-- Hero Cover Frame -->
+        <div class="hero-cover-wrapper">
+          <img src="assets/cover 17.png" alt="Grok Super Intelligence - Hero Cover" class="hero-cover-img" width="1500" height="500">
         </div>
 
-        <!-- Right: Focal Artwork & Interactive Hologram -->
-        <div class="hero-visual">
-          <div class="hero-art-stage" id="hero-art-stage">
-            
-            <!-- Hologram Orbit Rings -->
-            <div class="holo-ring holo-ring-1" aria-hidden="true"></div>
-            <div class="holo-ring holo-ring-2" aria-hidden="true"></div>
-            <div class="holo-halo" aria-hidden="true"></div>
-
-            <!-- Artwork Container with 3D Tilt -->
-            <div class="hero-card tilt-card" id="hero-tilt-card">
-              <div class="card-hud-corner corner-tl"></div>
-              <div class="card-hud-corner corner-tr"></div>
-              <div class="card-hud-corner corner-bl"></div>
-              <div class="card-hud-corner corner-br"></div>
-              
-              <figure class="hero-img-box">
-                <img class="hero-mascot-img" 
-                     src="assets/phoenix_v1_0_CAT_SI_the_world_s_cutest_baby_AI_genius_kitten_an (2).jpg" 
-                     alt="CAT SI - The Baby AI Astronaut Kitten Genius" 
-                     fetchpriority="high">
-                <div class="hero-scan-beam" aria-hidden="true"></div>
-              </figure>
-
-              <!-- Floating HUD Badges -->
-              <div class="float-badge badge-orbit" data-parallax="0.08">
-                <span class="badge-dot"></span>
-                <span class="badge-text">ORBIT: LEO &rarr; MARS</span>
-              </div>
-              <div class="float-badge badge-neural" data-parallax="-0.06">
-                <svg viewBox="0 0 24 24" class="badge-icon"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                <span class="badge-text">IQ: QUANTUM GENIUS</span>
-              </div>
-            </div>
-
-          </div>
+        <!-- Badges -->
+        <div class="hero-badge-wrap hero-entrance delay-100">
+          <span class="section-badge badge-gold">THE SUPERHERO OF THE MEME UNIVERSE.</span>
+          <span class="section-badge badge-red">TOKEN: $GSI</span>
         </div>
 
-      </div>
-    </section>
-
-    <!-- LIVE CYBER TICKER STRIP -->
-    <section class="ticker-band" aria-label="Live Project Ticker">
-      <div class="ticker-track" id="ticker-track">
-        <div class="ticker-content">
-          <span class="tick-item"><span class="tick-sym">$CSI</span> CAT SUPER INTELLIGENCE</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">COUNTDOWN: T-0:01</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">DESTINATION: MARS</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">SUPPLY: UPDATE</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">TAX: UPDATE</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">ROBINHOOD PROTOCOL</span>
-          <span class="tick-dot">&bull;</span>
-          <span class="tick-item">AUTONOMOUS QUANTUM PURR</span>
-          <span class="tick-dot">&bull;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- KEY STATS TELEMETRY STRIP -->
-    <section class="telemetry-strip" aria-label="Key Metrics">
-      <div class="container strip-grid">
-        <div class="telemetry-card" data-reveal>
-          <div class="telemetry-value">UPDATE</div>
-          <div class="telemetry-label">Total $CSI Supply</div>
-          <div class="telemetry-sub">Official Circulating Supply</div>
-        </div>
-        <div class="telemetry-card" data-reveal style="--reveal-delay: 80ms;">
-          <div class="telemetry-value text-accent">UPDATE</div>
-          <div class="telemetry-label">Buy &amp; Sell Tax</div>
-          <div class="telemetry-sub">Pure Decentralized Code</div>
-        </div>
-        <div class="telemetry-card" data-reveal style="--reveal-delay: 160ms;">
-          <div class="telemetry-value text-primary">Robinhood</div>
-          <div class="telemetry-label">Cosmic Network</div>
-          <div class="telemetry-sub">Ultra Fast &bull; Micro Gas Fees</div>
-        </div>
-        <div class="telemetry-card" data-reveal style="--reveal-delay: 240ms;">
-          <div class="telemetry-value text-secondary">T-0:01</div>
-          <div class="telemetry-label">Mars Starship Launch</div>
-          <div class="telemetry-sub">Flight Deck Locked with Elon</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MISSION SECTION: THE MARS LAUNCH (ELON & CAT SI COLLABORATION) -->
-    <section class="section mission-section" id="mission" aria-labelledby="mission-title">
-      <div class="container">
-        
-        <div class="section-header" data-reveal>
-          <div class="eyebrow-hud">
-            <span class="hud-blink"></span>
-            <span>// FLIGHT DIRECTIVE 001 // STARBASE LAUNCH CONTROL</span>
-          </div>
-          <h2 class="section-title" id="mission-title">
-            MISSION TO THE <span class="text-gradient-secondary">RED PLANET</span>
-          </h2>
-          <p class="section-subtitle">
-            Directly from Starbase launch complex: Commander CAT SI strapped inside the orbital capsule, guiding telemetry across planetary trajectories with Elon Musk on the bridge.
-          </p>
-        </div>
-
-        <div class="mission-grid">
-          <!-- Left: Narrative & Telemetry Checklist -->
-          <div class="mission-narrative" data-reveal>
-            <div class="hud-terminal-box">
-              <div class="box-top-bar">
-                <span class="terminal-dot"></span>
-                <span class="box-title">MISSION_PROFILE_MARS.SYS</span>
-                <span class="box-badge">VERIFIED</span>
-              </div>
-              
-              <div class="mission-body">
-                <h3 class="mission-subhead">Starship Telemetry Locked: Liftoff at T-0:01</h3>
-                <p>
-                  While conventional projects stay confined to digital servers, CAT SI was engineered for the stars. Combining neural deep learning with SpaceX launch telemetry, this kitten astronaut executes zero-G orbital calculations faster than supercomputers.
-                </p>
-
-                <div class="telemetry-checklist">
-                  <div class="check-item">
-                    <span class="check-icon">&check;</span>
-                    <div class="check-content">
-                      <strong>Interplanetary Flight Deck:</strong>
-                      <span>Direct telemetry synchronized with launchpad command at Starbase.</span>
-                    </div>
-                  </div>
-                  <div class="check-item">
-                    <span class="check-icon">&check;</span>
-                    <div class="check-content">
-                      <strong>Quantum Navigation Visor:</strong>
-                      <span>Real-time orbital tracking calculating the Hohmann transfer trajectory to Mars.</span>
-                    </div>
-                  </div>
-                  <div class="check-item">
-                    <span class="check-icon">&check;</span>
-                    <div class="check-content">
-                      <strong>Decentralized Colony Protocol:</strong>
-                      <span>The first native cryptocurrency designed to establish financial consensus on Mars.</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mission-actions">
-                  <a class="btn btn-primary btn-shine" href="https://catsi.online/">
-                    <span>Join Flight Ranks</span>
-                  </a>
-                  <a class="btn btn-secondary" href="https://catsi.online/" target="_blank" rel="noopener noreferrer">
-                    <span>Watch Space Feed</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Wide Panoramic Banner from Assets -->
-          <div class="mission-banner-wrap" data-reveal style="--reveal-delay: 120ms;">
-            <div class="banner-frame spotlight-card">
-              <img class="banner-img" 
-                   src="assets/IMG_3084.JPG" 
-                   alt="CAT SI Mission launch with Elon Musk at SpaceX telemetry control station" 
-                   loading="lazy">
-              
-              <div class="banner-hud-overlay">
-                <div class="overlay-badge">
-                  <span class="dot-live"></span>
-                  <span>STARBASE BRIDGE: T-0:01</span>
-                </div>
-                <div class="overlay-caption">
-                  <span class="caption-title">CAT SI &bull; STARSHIP MARS CAPSULE</span>
-                  <span class="caption-tech">LAT: 25.99° N &bull; LON: 97.15° W</span>
-                </div>
-              </div>
-              <div class="banner-scanline" aria-hidden="true"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION: QUANTUM FELINE INTELLIGENCE -->
-    <section class="section about-section" id="intelligence" aria-labelledby="intel-title">
-      <div class="container">
-        
-        <div class="about-grid">
-          
-          <!-- Left: Overlapping Futuristic Cards -->
-          <div class="about-visuals" data-reveal>
-            <div class="overlapping-container">
-              <!-- Primary Card -->
-              <div class="card-primary spotlight-card">
-                <img class="about-img-main" 
-                     src="assets/phoenix_v1_0_CAT_SI_a_hilarious_baby_superintelligent_AI_kitten (2).jpg" 
-                     alt="CAT SI commanding holographic quantum terminal" 
-                     loading="lazy">
-                <div class="card-hud-tag">// QUANTUM_TERMINAL_NODE</div>
-              </div>
-
-              <!-- Overlapping Secondary Card -->
-              <div class="card-secondary-overlap spotlight-card">
-                <img class="about-img-sub" 
-                     src="assets/phoenix_v1_0_CAT_SI_the_world_s_cutest_baby_AI_genius_kitten_an.jpg" 
-                     alt="CAT SI with neural brain halo" 
-                     loading="lazy">
-                <div class="badge-mini-hud">
-                  <span class="badge-pulse"></span>
-                  <span>NEURAL SYNAPSE</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Narrative & Milestones -->
-          <div class="about-copy" data-reveal style="--reveal-delay: 140ms;">
-            <div class="eyebrow-hud">
-              <span class="hud-blink"></span>
-              <span>// ARCHITECTURE &amp; LORE</span>
-            </div>
-            <h2 class="section-title" id="intel-title">
-              TOO SMART TO CRAWL. <br>
-              <span class="text-gradient">DESTINED TO COMMAND.</span>
-            </h2>
-            <p class="about-lede">
-              Trained on millions of hours of deep space astrophysics and high-frequency feline purring algorithms, CAT SI represents the ultimate singularity in Web3.
-            </p>
-            <p class="about-body">
-              While other meme coins chase temporary social cycles, CAT SI operates on cosmic timeframes. Armed with an impenetrable cute exterior and an unstoppable autonomous neural core, this kitten is building the decentralized compute layer for interplanetary civilization.
-            </p>
-
-            <div class="intel-specs-grid">
-              <div class="intel-spec-card">
-                <div class="spec-number">01</div>
-                <div class="spec-info">
-                  <h4>Neural Visor Array</h4>
-                  <p>Translates complex market equations into cute whisker twitches with 99.8% precision.</p>
-                </div>
-              </div>
-              <div class="intel-spec-card">
-                <div class="spec-number">02</div>
-                <div class="spec-info">
-                  <h4>Cosmic Telemetry</h4>
-                  <p>Synchronized across Starlink constellations and Mars deep space relay networks.</p>
-                </div>
-              </div>
-              <div class="intel-spec-card">
-                <div class="spec-number">03</div>
-                <div class="spec-info">
-                  <h4>Zero-Gravity Protocol</h4>
-                  <p>100% decentralized, zero taxes, liquidity burned into the cosmic void forever.</p>
-                </div>
-              </div>
-              <div class="intel-spec-card">
-                <div class="spec-number">04</div>
-                <div class="spec-info">
-                  <h4>Autonomous Purr Engine</h4>
-                  <p>Emits calming quantum frequencies that neutralize bear market sentiment.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TOKEN TERMINAL / DASHBOARD SECTION -->
-    <section class="section terminal-section" id="terminal" aria-labelledby="terminal-title">
-      <div class="container">
-        
-        <div class="section-header" data-reveal>
-          <div class="eyebrow-hud">
-            <span class="hud-blink"></span>
-            <span>// ON-CHAIN TELEMETRY // SMART CONTRACT TERMINAL</span>
-          </div>
-          <h2 class="section-title" id="terminal-title">
-            TOKENOMICS &amp; <span class="text-gradient">COMMAND PANEL</span>
-          </h2>
-          <p class="section-subtitle">
-            Official smart contract address and on-chain telemetry parameters will be updated upon launch.
-          </p>
-        </div>
-
-        <div class="terminal-dashboard" data-reveal>
-          
-          <!-- Terminal Header Bar -->
-          <div class="terminal-top-hud">
-            <div class="window-controls">
-              <span class="ctrl-dot dot-red"></span>
-              <span class="ctrl-dot dot-yellow"></span>
-              <span class="ctrl-dot dot-green"></span>
-            </div>
-            <div class="terminal-title-text">root@catsi-neural-node:~# node get-tokenomics.js</div>
-            <div class="terminal-connection-badge">
-              <span class="conn-dot"></span>
-              <span>MAINNET-BETA // SECURE</span>
-            </div>
-          </div>
-
-          <!-- Terminal Content Body -->
-          <div class="terminal-body">
-            
-            <!-- Metric Readout Matrix -->
-            <div class="metrics-matrix">
-              <div class="matrix-cell">
-                <span class="cell-label">ASSET_NAME</span>
-                <span class="cell-value">Cat Super Intelligence</span>
-              </div>
-              <div class="matrix-cell">
-                <span class="cell-label">TICKER_SYMBOL</span>
-                <span class="cell-value text-primary">$CSI</span>
-              </div>
-              <div class="matrix-cell">
-                <span class="cell-label">BLOCKCHAIN_NETWORK</span>
-                <span class="cell-value text-secondary">Robinhood Chain</span>
-              </div>
-              <div class="matrix-cell">
-                <span class="cell-label">TOTAL_SUPPLY</span>
-                <span class="cell-value">UPDATE</span>
-              </div>
-              <div class="matrix-cell">
-                <span class="cell-label">TRANSACTION_TAX</span>
-                <span class="cell-value text-accent">UPDATE</span>
-              </div>
-              <div class="matrix-cell">
-                <span class="cell-label">LP_LIQUIDITY</span>
-                <span class="cell-value text-primary">UPDATE</span>
-              </div>
-            </div>
-
-            <!-- Contract Address Interactive Box -->
-            <div class="contract-hud-box">
-              <div class="ca-header">
-                <span class="ca-tag">OFFICIAL CONTRACT ADDRESS</span>
-                <span class="ca-status">UPDATING</span>
-              </div>
-              
-              <div class="ca-input-row">
-                <div class="ca-code-wrapper">
-                  <svg class="ca-key-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-                  <code class="ca-string" id="contract-address">UPDATE</code>
-                </div>
-                
-                <button class="btn btn-copy" type="button" id="copy-btn" aria-label="Copy smart contract address">
-                  <svg class="copy-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-                  <span id="copy-label">COPY CA</span>
-                </button>
-              </div>
-
-              <!-- Toast notification -->
-              <div class="copy-toast" id="copy-toast" role="status" aria-live="polite">Contract Address Copied to Clipboard!</div>
-            </div>
-
-            <!-- Quick Action Links -->
-            <div class="terminal-action-row">
-              <a class="btn btn-primary btn-shine" href="https://catsi.online/" target="_blank" rel="noopener noreferrer">
-                <span>Trade on Uniswap</span>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a class="btn btn-secondary" href="https://catsi.online/" target="_blank" rel="noopener noreferrer">
-                <span>View Live Chart (DexScreener)</span>
-              </a>
-              <a class="btn btn-secondary" href="https://robinhoodchain.blockscout.com/" target="_blank" rel="noopener noreferrer">
-                <span>Explore Robinhood Chain</span>
-              </a>
-            </div>
-
-          </div>
-
-          <!-- Terminal Bottom Status Bar -->
-          <div class="terminal-bottom-bar">
-            <span>&bull; NODE: MARS-RELAY-01</span>
-            <span>&bull; LATENCY: 22ms</span>
-            <span>&bull; CONSENSUS: 100% HEALTHY</span>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- MEDIA / ARCHIVE GALLERY SECTION -->
-    <section class="section archive-section" id="archive" aria-labelledby="archive-title">
-      <div class="container">
-        
-        <div class="section-header" data-reveal>
-          <div class="eyebrow-hud">
-            <span class="hud-blink"></span>
-            <span>// TRANSMISSION LOGS // VISUAL ARCHIVE</span>
-          </div>
-          <h2 class="section-title" id="archive-title">
-            COSMIC <span class="text-gradient">TRANSMISSIONS</span>
-          </h2>
-          <p class="section-subtitle">
-            Classified telemetry captures of Commander CAT SI operating across Earth orbit, Mars trajectory, and interstellar deep space.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          
-          <!-- Card 1 -->
-          <article class="gallery-card spotlight-card" data-reveal>
-            <div class="gallery-img-box">
-              <img src="assets/phoenix_v1_0_CAT_SI_an_adorable_baby_AI_astronaut_kitten_exploring.jpg" 
-                   alt="CAT SI drifting in zero-G deep space" 
-                   loading="lazy">
-              <div class="gallery-badge">SECTOR 01</div>
-            </div>
-            <div class="gallery-meta">
-              <div class="gallery-head">
-                <h3>Zero-G Wanderer</h3>
-                <span class="gallery-tag">ORBITAL</span>
-              </div>
-              <p class="gallery-desc">Floating freely in high Earth orbit while calculating Mars transfer trajectory burns.</p>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="gallery-card spotlight-card" data-reveal style="--reveal-delay: 80ms;">
-            <div class="gallery-img-box">
-              <img src="assets/phoenix_v1_0_CAT_SI_an_adorable_baby_AI_astronaut_kitten_exploring (2).jpg" 
-                   alt="CAT SI waving with glowing paw in space" 
-                   loading="lazy">
-              <div class="gallery-badge">SECTOR 02</div>
-            </div>
-            <div class="gallery-meta">
-              <div class="gallery-head">
-                <h3>Planetary Salute</h3>
-                <span class="gallery-tag">TELEMETRY</span>
-              </div>
-              <p class="gallery-desc">Broadcasting a warm paw greeting to Earth from the threshold of interplanetary space.</p>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="gallery-card spotlight-card" data-reveal style="--reveal-delay: 160ms;">
-            <div class="gallery-img-box">
-              <img src="assets/phoenix_v1_0_CAT_SI_a_hilarious_baby_superintelligent_AI_kitten.jpg" 
-                   alt="CAT SI at the cyber terminal platform" 
-                   loading="lazy">
-              <div class="gallery-badge">SECTOR 03</div>
-            </div>
-            <div class="gallery-meta">
-              <div class="gallery-head">
-                <h3>Command Matrix</h3>
-                <span class="gallery-tag">AI CORE</span>
-              </div>
-              <p class="gallery-desc">Operating quantum navigational arrays and compiling decentralized blockchain protocols.</p>
-            </div>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="gallery-card spotlight-card" data-reveal style="--reveal-delay: 240ms;">
-            <div class="gallery-img-box">
-              <img src="assets/phoenix_v1_0_CAT_SI_the_world_s_cutest_baby_AI_genius_kitten_an (2).jpg" 
-                   alt="CAT SI with glowing neural brain ring" 
-                   loading="lazy">
-              <div class="gallery-badge">SECTOR 04</div>
-            </div>
-            <div class="gallery-meta">
-              <div class="gallery-head">
-                <h3>Neural Singularity</h3>
-                <span class="gallery-tag">GENIUS</span>
-              </div>
-              <p class="gallery-desc">The moment baby kitten cuteness fused permanently with artificial superintelligence.</p>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- COMMUNITY SECTION -->
-    <section class="section community-section" id="community" aria-labelledby="community-title">
-      <div class="container">
-        
-        <div class="section-header" data-reveal>
-          <div class="eyebrow-hud">
-            <span class="hud-blink"></span>
-            <span>// NETWORK RECRUITMENT // SPACE CREW</span>
-          </div>
-          <h2 class="section-title" id="community-title">
-            JOIN THE <span class="text-gradient">SUPERINTELLIGENCE</span>
-          </h2>
-          <p class="section-subtitle">
-            The kitten army is coordinating across the stars. Connect directly to our active communication channels.
-          </p>
-        </div>
-
-        <div class="community-grid">
-          
-          <!-- X / Twitter -->
-          <a class="community-card spotlight-card" href="https://x.com/catsionhood?s=11" target="_blank" rel="noopener noreferrer" data-reveal>
-            <div class="comm-icon-box">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </div>
-            <div class="comm-body">
-              <div class="comm-title-row">
-                <h3>X / Twitter</h3>
-                <span class="comm-arrow">&rarr;</span>
-              </div>
-              <p>Official announcements, mission dispatches, and orbital transmission updates.</p>
-              <span class="comm-action-link">Follow @CATSI &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Telegram -->
-          <a class="community-card spotlight-card" href="https://t.me/catsionhood" target="_blank" rel="noopener noreferrer" data-reveal style="--reveal-delay: 80ms;">
-            <div class="comm-icon-box">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 4.3 18.9 19.05c-.23 1.01-.83 1.26-1.68.79l-4.64-3.42-2.24 2.16c-.25.25-.45.45-.93.45l.33-4.72 8.58-7.75c.37-.33-.08-.52-.58-.19L7.16 13.1l-4.57-1.43c-.99-.31-1.01-.99.21-1.47l17.88-6.89c.83-.3 1.55.2 1.26.99z"/></svg>
-            </div>
-            <div class="comm-body">
-              <div class="comm-title-row">
-                <h3>Telegram Comms</h3>
-                <span class="comm-arrow">&rarr;</span>
-              </div>
-              <p>Global space station chatroom with thousands of active cosmonauts.</p>
-              <span class="comm-action-link">Join Telegram &rarr;</span>
-            </div>
-          </a>
-
-          <!-- DexScreener -->
-          <a class="community-card spotlight-card" href="https://catsi.online/" target="_blank" rel="noopener noreferrer" data-reveal style="--reveal-delay: 160ms;">
-            <div class="comm-icon-box">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
-            </div>
-            <div class="comm-body">
-              <div class="comm-title-row">
-                <h3>DexScreener</h3>
-                <span class="comm-arrow">&rarr;</span>
-              </div>
-              <p>Live real-time decentralized candle charts, volume, and liquidity telemetry.</p>
-              <span class="comm-action-link">Open Chart &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Robinhood Chain Explorer -->
-          <a class="community-card spotlight-card" href="https://robinhoodchain.blockscout.com/" target="_blank" rel="noopener noreferrer" data-reveal style="--reveal-delay: 240ms;">
-            <div class="comm-icon-box">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
-            </div>
-            <div class="comm-body">
-              <div class="comm-title-row">
-                <h3>Robinhood Chain Explorer</h3>
-                <span class="comm-arrow">&rarr;</span>
-              </div>
-              <p>Verify contract bytecode, liquidity burn transactions, and on-chain ownership.</p>
-              <span class="comm-action-link">Inspect Contract &rarr;</span>
-            </div>
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FINAL CTA SECTION -->
-    <section class="final-cta-section" aria-label="Final Call to Action">
-      <div class="cta-watermark-bg" aria-hidden="true">
-        <img src="assets/IMG_3085.JPG" alt="" loading="lazy">
-      </div>
-      <div class="cta-halo-glow" aria-hidden="true"></div>
-
-      <div class="container final-cta-container" data-reveal>
-        <div class="eyebrow-hud justify-center">
-          <span class="hud-blink"></span>
-          <span>// FLIGHT CLEARANCE GRANTED // T-0:01</span>
-        </div>
-
-        <h2 class="final-cta-title">
-          THE FUTURE IS INTELLIGENT.<br>
-          <span class="text-gradient">AND IT PURRS.</span>
-        </h2>
-
-        <p class="final-cta-desc">
-          The launch tower has retracted. The boosters are igniting. Secure your place in the planetary colony with $CSI before orbital insertion is complete.
+        <!-- Heading & Copy -->
+        <h1 class="hero-title hero-entrance delay-200">GROK SUPER INTELLIGENCE</h1>
+        <p class="hero-subtitle hero-entrance delay-200">THE SUPERHERO OF THE MEME UNIVERSE.</p>
+        <p class="hero-description hero-entrance delay-300">
+          An image of Grok wearing a cape—superintelligence is near .A community-run meme on Robinhood.
         </p>
 
-        <div class="final-cta-buttons">
-          <a class="btn btn-primary btn-large btn-shine" href="https://catsi.online/">
-            <span>Acquire $CSI Now</span>
-            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group hero-entrance delay-400">
+          <a href="#" id="btn-buy-hero" class="btn btn-primary btn-shimmer">
+            <span class="btn-icon">⚡</span>
+            <span>Trade on Uniswap v4</span>
           </a>
-          <a class="btn btn-secondary btn-large" href="https://t.me/catsionhood" target="_blank" rel="noopener noreferrer">
-            <span>Join Telegram Comms</span>
+          <a href="#" id="btn-chart-hero" class="btn btn-outline">
+            <span class="btn-icon">📊</span>
+            <span>View Chart</span>
           </a>
+          <a href="#" id="social-btn-telegram-hero" class="btn btn-secondary">
+            <span class="btn-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.95-1.28 4.92-2.13 5.9-2.54 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+            </span>
+            <span>Join Telegram</span>
+          </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator scroll-indicator-bounce hero-entrance delay-500" aria-label="Scroll to About Section">
+          <span>Explore The Universe</span>
+          <div class="scroll-indicator-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ANIMATED BANNER
+         ========================================================================== -->
+    <section class="animated-banner-section">
+      <div class="container">
+        <div class="banner-frame reveal reveal-scale">
+          <img src="assets/banner.gif" alt="Grok Super Intelligence Animated Banner" class="banner-gif-img" width="1500" height="500" loading="lazy">
         </div>
       </div>
     </section>
 
+    <!-- ==========================================================================
+         4. ABOUT GSI
+         ========================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">ABOUT GSI</span>
+          <h2 class="section-title">ONE HERO. ONE CAPE. ONE COMMUNITY.</h2>
+          <p class="section-subtitle">MEET GROK SUPER INTELLIGENCE.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story & Features -->
+          <div class="about-info-col reveal reveal-left">
+            <p class="about-lead-text">
+              Hearing more and more AI researchers are taking up smoking … superintelligence is near
+            </p>
+
+            <div class="about-features-list">
+              <div class="feature-card">
+                <div class="feature-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="feature-text">
+                  <h3 class="feature-title">COMMUNITY FIRST</h3>
+                  <p class="feature-desc">A community experience built around people, conversation, and a shared identity.</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div class="feature-text">
+                  <h3 class="feature-title">SUPERHERO ENERGY</h3>
+                  <p class="feature-desc">A memorable character inspired by the classic cape-wearing hero aesthetic.</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="feature-text">
+                  <h3 class="feature-title">MEME CULTURE</h3>
+                  <p class="feature-desc">Humor, creativity, and an unmistakable internet personality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Mascot Visual -->
+          <div class="about-visual-col reveal reveal-right">
+            <div class="character-card-frame">
+              <img src="assets/AVT (16).png" alt="Grok Super Intelligence Superhero Mascot" class="character-img" width="1000" height="1000" loading="lazy">
+              <div class="character-badge-overlay">
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: #fff;">GSI GUARDIAN</div>
+                  <div style="font-size: 0.75rem; color: var(--color-golden-yellow);">THE MEME PROTECTOR</div>
+                </div>
+                <span class="section-badge badge-gold" style="margin: 0;">CLASS S</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. TOKEN FACTS ("THE HERO FILE")
+         ========================================================================== -->
+    <section id="token" class="section token-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge badge-red">THE HERO FILE</span>
+          <h2 class="section-title">$GSI TOKEN FACTS</h2>
+          <p class="section-subtitle">
+            Official specifications and verified metrics for the Grok Super Intelligence token.
+          </p>
+        </div>
+
+        <div class="token-cabinet reveal">
+          <!-- Token Facts Grid -->
+          <div class="token-info-grid">
+            <div class="token-fact-item">
+              <span class="token-fact-label">Token Name</span>
+              <span id="token-name-val" class="token-fact-value">Grok Super Intelligence</span>
+            </div>
+            <div class="token-fact-item">
+              <span class="token-fact-label">Symbol</span>
+              <span id="token-symbol-val" class="token-fact-value highlight">$GSI</span>
+            </div>
+            <div class="token-fact-item">
+              <span class="token-fact-label">Network</span>
+              <span id="token-network-val" class="token-fact-value">Robinhood</span>
+            </div>
+          </div>
+
+          <!-- Interactive Contract Box -->
+          <div class="contract-box-wrapper">
+            <div class="contract-box">
+              <div style="text-align: left;">
+                <div class="token-fact-label">Official Contract Address</div>
+                <span id="contract-address-val" class="contract-address-text">Contract address coming soon</span>
+              </div>
+              <button id="btn-copy-contract" class="btn-copy-contract" aria-label="Copy official contract address">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>COPY</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Token Action Buttons -->
+          <div class="token-actions-row">
+            <a href="#" id="btn-buy-token" class="btn btn-primary btn-shimmer">Trade on Uniswap v4</a>
+            <a href="#" id="btn-chart-token" class="btn btn-outline">View Chart</a>
+            <a href="#" id="btn-verify-contract" class="btn btn-secondary">Explore Robinhood Chain</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. STAY SAFE SECTION
+         ========================================================================== -->
+    <section id="safety" class="section safety-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge badge-gold">DEFENSE PROTOCOL</span>
+          <h2 class="section-title">STAY SAFE OUT THERE.</h2>
+          <p class="section-subtitle">
+            The crypto universe can be perilous. Always adhere to these core security guidelines.
+          </p>
+        </div>
+
+        <div class="safety-cards-grid">
+          <div class="safety-card reveal delay-100">
+            <div class="safety-icon-box">🛡️</div>
+            <div>
+              <h3 class="safety-card-title">VERIFY OFFICIAL CONTRACT</h3>
+              <p class="safety-card-desc">Always cross-reference the official contract address from our verified website and pinned community messages.</p>
+            </div>
+          </div>
+
+          <div class="safety-card reveal delay-200">
+            <div class="safety-icon-box">🔐</div>
+            <div>
+              <h3 class="safety-card-title">NEVER SHARE RECOVERY PHRASES</h3>
+              <p class="safety-card-desc">Your secret recovery phrase is your vault key. Never disclose it to any person or website under any circumstance.</p>
+            </div>
+          </div>
+
+          <div class="safety-card reveal delay-300">
+            <div class="safety-icon-box">🚫</div>
+            <div>
+              <h3 class="safety-card-title">BE CAREFUL WITH UNKNOWN DMS</h3>
+              <p class="safety-card-desc">Admins and team members will never send you unsolicited direct messages with investment deals or secret airdrops.</p>
+            </div>
+          </div>
+
+          <div class="safety-card reveal delay-400">
+            <div class="safety-icon-box">🔍</div>
+            <div>
+              <h3 class="safety-card-title">VERIFY ON TRUSTED EXPLORERS</h3>
+              <p class="safety-card-desc">Use reputable blockchain explorers (e.g. Robinhood Chain Explorer, DexScreener) to confirm token supply and verified pair data.</p>
+            </div>
+          </div>
+
+          <div class="safety-card reveal delay-500">
+            <div class="safety-icon-box">⚠️</div>
+            <div>
+              <h3 class="safety-card-title">HIGH VOLATILITY AWARENESS</h3>
+              <p class="safety-card-desc">Cryptocurrencies and meme coins are subject to extreme market fluctuations. Never risk more capital than you can afford to lose.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. MINI-GAME — PLAY GSI
+         ========================================================================== -->
+    <section id="game" class="section game-section">
+      <div class="container game-container">
+        <div class="section-header reveal">
+          <span class="section-badge badge-red">ARCADE ZONE</span>
+          <h2 class="section-title">GSI HERO DEFENSE</h2>
+          <p class="section-subtitle">
+            Defend the skies! Pilot the GSI Hero, blast incoming rogue drones, and rack up the highest score.
+          </p>
+        </div>
+
+        <!-- Arcade Cabinet -->
+        <div class="arcade-cabinet reveal">
+          <!-- Cabinet Header / HUD -->
+          <div class="arcade-header">
+            <div class="arcade-title-wrap">
+              <span class="arcade-badge">ARCADE MODE</span>
+              <span style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: #fff;">STAGE 01 // METROPOLIS SKIES</span>
+            </div>
+
+            <div class="arcade-hud">
+              <div class="hud-stat">
+                <span class="hud-label">SCORE</span>
+                <span id="hud-score-val" class="hud-value">0</span>
+              </div>
+
+              <div class="hud-stat">
+                <span class="hud-label">BEST</span>
+                <span id="hud-highscore-val" class="hud-value">0</span>
+              </div>
+
+              <div class="hud-stat">
+                <span class="hud-label">SHIELD HP</span>
+                <div class="hud-health">
+                  <div class="health-bar-container">
+                    <div id="health-bar-fill" class="health-bar-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="arcade-actions">
+              <button id="btn-game-sound-toggle" class="arcade-btn-icon" aria-label="Toggle sound effects" title="Toggle Sound">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </button>
+              <button id="btn-game-pause-toggle" class="arcade-btn-icon" aria-label="Pause game" title="Pause Game">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Canvas Viewport -->
+          <div class="canvas-wrapper">
+            <canvas id="game-canvas"></canvas>
+
+            <!-- Overlay: Start Screen -->
+            <div id="game-overlay-start" class="game-overlay">
+              <img src="assets/AVT (16).png" alt="GSI Hero" class="game-overlay-avatar">
+              <h3 class="overlay-title">GSI HERO DEFENSE</h3>
+              <p class="overlay-subtitle">
+                Rogue tech drones are invading the skyways. Take flight with the Grok Super Intelligence Hero and obliterate threats with your cosmic beam!
+              </p>
+              <div class="overlay-btn-group">
+                <button id="btn-game-start" class="btn-game-primary btn-shimmer">
+                  <span>START MISSION</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Overlay: Pause Screen -->
+            <div id="game-overlay-pause" class="game-overlay hidden">
+              <h3 class="overlay-title">MISSION PAUSED</h3>
+              <p class="overlay-subtitle">Take a breather hero. Your city awaits your return.</p>
+              <div class="overlay-btn-group">
+                <button id="btn-game-resume" class="btn-game-primary">RESUME</button>
+              </div>
+            </div>
+
+            <!-- Overlay: Game Over Screen -->
+            <div id="game-overlay-gameover" class="game-overlay hidden">
+              <h3 class="overlay-title" style="color: var(--color-cape-red);">MISSION TERMINATED</h3>
+              <div class="overlay-stats">
+                <div class="overlay-stat-item">
+                  <span>FINAL SCORE</span>
+                  <span id="final-score-val">0</span>
+                </div>
+                <div class="overlay-stat-item">
+                  <span>BEST RECORD</span>
+                  <span id="final-highscore-val">0</span>
+                </div>
+              </div>
+              <div class="overlay-btn-group">
+                <button id="btn-game-restart" class="btn-game-primary btn-shimmer">TRY AGAIN</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Controls Guide -->
+          <div class="arcade-controls-guide">
+            <div class="keyboard-hints">
+              <span><strong>Controls:</strong></span>
+              <span><span class="key-badge">W</span> <span class="key-badge">A</span> <span class="key-badge">S</span> <span class="key-badge">D</span> or <span class="key-badge">ARROWS</span> Move</span>
+              <span><span class="key-badge">SPACE</span> Fire Beam</span>
+              <span><span class="key-badge">P</span> Pause</span>
+            </div>
+            <div>
+              <span>Arcade v1.0 // HTML5 Canvas Engine</span>
+            </div>
+          </div>
+
+          <!-- Mobile Virtual Controls -->
+          <div class="mobile-game-controls">
+            <div class="touch-controls-layout">
+              <!-- Directional Pad -->
+              <div class="dpad">
+                <button id="dpad-btn-up" class="dpad-btn dpad-up" aria-label="Up">▲</button>
+                <button id="dpad-btn-left" class="dpad-btn dpad-left" aria-label="Left">◀</button>
+                <button id="dpad-btn-right" class="dpad-btn dpad-right" aria-label="Right">▶</button>
+                <button id="dpad-btn-down" class="dpad-btn dpad-down" aria-label="Down">▼</button>
+              </div>
+
+              <!-- Action Fire Button -->
+              <div class="touch-action-buttons">
+                <button id="touch-btn-fire" class="touch-btn-fire" aria-label="Fire Beam">FIRE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. COMMUNITY SECTION
+         ========================================================================== -->
+    <section id="community" class="section community-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge badge-gold">HQ DISPATCH</span>
+          <h2 class="section-title">JOIN THE GSI UNIVERSE.</h2>
+          <p class="section-subtitle">EVERY HERO NEEDS A COMMUNITY.</p>
+        </div>
+
+        <div class="community-layout">
+          <!-- Visual: Animated GIF Showcase -->
+          <div class="community-visual-col reveal reveal-left">
+            <div class="community-gif-frame">
+              <img src="assets/new-buy.gif" alt="GSI Hero and Community" class="community-gif-img" width="500" height="500" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Content: Social Links Grid -->
+          <div class="community-content-col reveal reveal-right">
+            <p class="community-lead">
+              The Grok Super Intelligence universe is built, powered, and expanded by everyday heroes like you. Dive into our official channels, share memes, and fly with the movement.
+            </p>
+
+            <div class="social-cards-grid">
+              <a href="#" id="social-btn-twitter" class="social-card">
+                <div class="social-card-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </div>
+                <span class="social-card-name">Twitter / X</span>
+              </a>
+
+              <a href="#" id="social-btn-telegram" class="social-card">
+                <div class="social-card-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.95-1.28 4.92-2.13 5.9-2.54 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                  </svg>
+                </div>
+                <span class="social-card-name">Telegram</span>
+              </a>
+
+              <a href="#" id="social-btn-explorer" class="social-card">
+                <div class="social-card-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <span class="social-card-name">Explorer</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="#hero" class="btn btn-primary btn-shimmer" style="width: 100%;">
+                <span>Join Official Channels</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. FINAL CTA
+         ========================================================================== -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="final-cta-cabinet reveal">
+          <span class="section-badge badge-red" style="margin-bottom: var(--space-md);">HERO CALLING</span>
+          <h2 class="final-cta-title">CAPE ON. THE GSI UNIVERSE AWAITS.</h2>
+          <p class="final-cta-desc">
+            One cape, one hero, and an unstoppable global community. Join the superhero saga today.
+          </p>
+
+          <div class="final-cta-actions">
+            <a href="#" id="btn-buy-final" class="btn btn-primary btn-shimmer">
+              <span class="btn-icon">⚡</span>
+              <span>Trade on Uniswap v4</span>
+            </a>
+            <a href="#community" class="btn btn-secondary">
+              <span class="btn-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.95-1.28 4.92-2.13 5.9-2.54 2.81-1.17 3.39-1.37 3.77-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+              </span>
+              <span>Join Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer" id="footer" aria-label="Site Footer">
-    <div class="container footer-container">
-      
+  <!-- ==========================================================================
+       10. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
       <div class="footer-top-grid">
         <!-- Brand Info -->
         <div class="footer-brand-col">
-          <a class="nav-brand mb-4" href="#top">
-            <div class="brand-avatar-box">
-              <img class="brand-avatar" src="assets/favicon.png" alt="CAT SI Logo">
-            </div>
-            <div class="brand-text">
-              <span class="brand-name">CAT SI</span>
-              <span class="brand-badge">$CSI</span>
-            </div>
+          <a href="#hero" class="brand-link">
+            <img src="assets/logo.png" alt="Grok Super Intelligence Logo" class="footer-brand-logo" width="220" height="38">
           </a>
-          <p class="footer-tagline">
-            The world's cutest baby artificial superintelligence kitten astronaut piloting space exploration to Mars.
+          <p class="footer-brand-desc">
+            Grok Super Intelligence ($GSI) is a superhero-inspired meme coin community. Built for fans of hero culture, creative memes, and collective energy.
           </p>
-          <div class="footer-social-row">
-            <a class="footer-social-btn" href="https://x.com/catsionhood?s=11" target="_blank" rel="noopener noreferrer" aria-label="CAT SI on X">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a class="footer-social-btn" href="https://t.me/catsionhood" target="_blank" rel="noopener noreferrer" aria-label="CAT SI on Telegram">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 4.3 18.9 19.05c-.23 1.01-.83 1.26-1.68.79l-4.64-3.42-2.24 2.16c-.25.25-.45.45-.93.45l.33-4.72 8.58-7.75c.37-.33-.08-.52-.58-.19L7.16 13.1l-4.57-1.43c-.99-.31-1.01-.99.21-1.47l17.88-6.89c.83-.3 1.55.2 1.26.99z"/></svg>
-            </a>
-          </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="footer-links-col">
-          <div class="footer-col-title">NAVIGATION</div>
-          <ul class="footer-nav-list">
-            <li><a href="#hero">Mission Top</a></li>
-            <li><a href="#mission">Mars Directive</a></li>
-            <li><a href="#intelligence">Neural Specs</a></li>
-            <li><a href="#terminal">Token Terminal</a></li>
-            <li><a href="#archive">Transmissions</a></li>
-            <li><a href="#community">Community</a></li>
-          </ul>
+        <!-- Navigation Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About GSI</a>
+          <a href="#token" class="footer-link">Token Facts</a>
+          <a href="#game" class="footer-link">Play Game</a>
         </div>
 
-        <!-- Protocol Links -->
-        <div class="footer-links-col">
-          <div class="footer-col-title">DECENTRALIZED ECOSYSTEM</div>
-          <ul class="footer-nav-list">
-            <li><a href="https://catsi.online/" target="_blank" rel="noopener noreferrer">Uniswap</a></li>
-            <li><a href="https://catsi.online/" target="_blank" rel="noopener noreferrer">DexScreener Chart</a></li>
-            <li><a href="https://robinhoodchain.blockscout.com/" target="_blank" rel="noopener noreferrer">Robinhood Chain Explorer</a></li>
-            <li><a href="https://catsi.online/" target="_blank" rel="noopener noreferrer">Robinhood Ecosystem</a></li>
-          </ul>
-        </div>
-
-        <!-- Contract Snippet -->
-        <div class="footer-ca-col">
-          <div class="footer-col-title">CONTRACT IDENTIFIER</div>
-          <div class="footer-ca-card">
-            <code>UPDATE</code>
-            <button class="footer-copy-btn" id="footer-copy-btn" type="button" aria-label="Copy contract address">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-              <span>Copy</span>
-            </button>
-          </div>
-          <p class="footer-ca-note">Official contract address will be updated upon token launch.</p>
+        <!-- Legal & Community -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Community</h4>
+          <a href="#community" class="footer-link">Twitter / X</a>
+          <a href="#community" class="footer-link">Telegram</a>
+          <a href="#safety" class="footer-link">Safety Guidelines</a>
         </div>
       </div>
 
-      <!-- Legal / Meme Disclaimer -->
-      <div class="footer-bottom-row">
-        <p class="disclaimer-text">
-          <strong>DISCLAIMER:</strong> $CSI is a decentralized community project celebrating artificial intelligence, feline culture, and interplanetary space exploration. $CSI has no intrinsic financial expectation and is intended for utility, digital entertainment, and community engagement. Always conduct your own research before participating in cryptocurrency ecosystems.
+      <div class="footer-bottom-bar">
+        <p class="footer-disclaimer">
+          <strong>Risk Disclaimer:</strong> Grok Super Intelligence ($GSI) is a superhero-inspired parody meme community token created for entertainment and creative engagement. Cryptocurrency and meme token transactions carry significant financial risk, high market volatility, and potential total capital loss. This website does not provide financial, investment, legal, or tax advice, nor does it guarantee financial returns. Verify all contract information independently before taking any action.
         </p>
-        <p class="copyright-text">
-          &copy; 2026 CAT SI ($CSI). Built for the Interplanetary Future.
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Grok Super Intelligence ($GSI). All rights reserved.
         </p>
       </div>
-
     </div>
   </footer>
 
-  <!-- Floating Scroll To Top Button -->
-  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Scroll back to top">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m0 0-7 7m7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-
-  <!-- External GSAP for smooth entrance and high-fidelity scroll reveals -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="./script.js?v=20261002-1"></script>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
