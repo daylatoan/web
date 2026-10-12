@@ -369,67 +369,71 @@ function initTokenModule() {
   setElementText('token-symbol-val', token.symbol);
   setElementText('token-network-val', token.network);
 
-  // Contract Address Display
-  const contractTextEl = document.getElementById('contract-address-val');
-  const copyBtn = document.getElementById('btn-copy-contract');
+  // Setup Contract Boxes (Hero & Token Sections)
+  const setupContractBox = (textElId, copyBtnId) => {
+    const contractTextEl = document.getElementById(textElId);
+    const copyBtn = document.getElementById(copyBtnId);
 
-  if (contractTextEl) {
-    if (token.contractAddress) {
-      contractTextEl.textContent = token.contractAddress;
-    } else {
-      contractTextEl.textContent = 'Contract address coming soon';
-      contractTextEl.style.fontStyle = 'italic';
-      contractTextEl.style.opacity = '0.7';
+    if (contractTextEl) {
+      if (token.contractAddress) {
+        contractTextEl.textContent = token.contractAddress;
+      } else {
+        contractTextEl.textContent = 'Contract address coming soon';
+        contractTextEl.style.fontStyle = 'italic';
+        contractTextEl.style.opacity = '0.7';
+      }
     }
-  }
 
-  // Copy Contract interaction
-  if (copyBtn) {
-    if (!token.contractAddress) {
-      copyBtn.setAttribute('disabled', 'true');
-      copyBtn.setAttribute('aria-disabled', 'true');
-      copyBtn.classList.add('btn-disabled');
-      copyBtn.title = 'Contract address is not yet deployed';
-    } else {
-      copyBtn.addEventListener('click', async () => {
-        try {
-          if (navigator.clipboard && window.isSecureContext) {
-            await navigator.clipboard.writeText(token.contractAddress);
-          } else {
-            // Fallback for non-HTTPS local environments
-            const textArea = document.createElement('textarea');
-            textArea.value = token.contractAddress;
-            textArea.style.position = 'fixed';
-            textArea.style.left = '-9999px';
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
+    if (copyBtn) {
+      if (!token.contractAddress) {
+        copyBtn.setAttribute('disabled', 'true');
+        copyBtn.setAttribute('aria-disabled', 'true');
+        copyBtn.classList.add('btn-disabled');
+        copyBtn.title = 'Contract address is not yet deployed';
+      } else {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(token.contractAddress);
+            } else {
+              // Fallback for non-HTTPS local environments
+              const textArea = document.createElement('textarea');
+              textArea.value = token.contractAddress;
+              textArea.style.position = 'fixed';
+              textArea.style.left = '-9999px';
+              document.body.appendChild(textArea);
+              textArea.focus();
+              textArea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textArea);
+            }
+
+            showToast('Contract address copied to clipboard!');
+
+            const origContent = copyBtn.innerHTML;
+            copyBtn.innerHTML = `
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>COPIED!</span>
+            `;
+            copyBtn.style.borderColor = 'var(--color-success)';
+
+            setTimeout(() => {
+              copyBtn.innerHTML = origContent;
+              copyBtn.style.borderColor = '';
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy contract:', err);
+            showToast('Unable to copy contract address');
           }
-
-          showToast('Contract address copied to clipboard!');
-
-          const origContent = copyBtn.innerHTML;
-          copyBtn.innerHTML = `
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-            <span>COPIED!</span>
-          `;
-          copyBtn.style.borderColor = 'var(--color-success)';
-
-          setTimeout(() => {
-            copyBtn.innerHTML = origContent;
-            copyBtn.style.borderColor = '';
-          }, 2000);
-        } catch (err) {
-          console.error('Failed to copy contract:', err);
-          showToast('Unable to copy contract address');
-        }
-      });
+        });
+      }
     }
-  }
+  };
+
+  setupContractBox('contract-address-val', 'btn-copy-contract');
+  setupContractBox('hero-contract-address-val', 'btn-copy-contract-hero');
 
   // 2. Configure Action Buttons (Swap, Chart, Explorer)
   setupActionButton('btn-buy-hero', token.swapUrl, 'Uniswap v4 portal coming soon');
