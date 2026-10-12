@@ -31,18 +31,18 @@ const siteConfig = {
     network: 'Robinhood',
     contractAddress: null, // e.g., '0x...' or null if not yet deployed
     tokenType: 'ERC-20 / Meme Coin',
-    explorerUrl: 'https://robinhoodchain.blockscout.com/', // Robinhood Chain Explorer
-    swapUrl: null,     // e.g., 'https://app.uniswap.org/explore/pools/...' (Uniswap v4)
-    chartUrl: null,    // e.g., 'https://dexscreener.com/...'
+    explorerUrl: 'https://groksuperinteligence.online', // Robinhood Chain Explorer
+    swapUrl: 'https://groksuperinteligence.online',     // Uniswap v4
+    chartUrl: 'https://groksuperinteligence.online',    // Chart
   },
 
   // Official Social Channels
   social: {
     twitterUrl: 'https://x.com', // Replace with official GSI X account when live
     telegramUrl: 'https://t.me', // Replace with official GSI Telegram channel
-    discordUrl: null,            // Null if not active
-    dexScreenerUrl: null,
-    gitbookUrl: null,
+    discordUrl: 'https://groksuperinteligence.online',
+    dexScreenerUrl: 'https://groksuperinteligence.online',
+    gitbookUrl: 'https://groksuperinteligence.online',
   },
 
   // Asset Paths
