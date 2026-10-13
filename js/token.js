@@ -100,6 +100,7 @@ export function initTokenModule() {
   setupActionButton('social-btn-twitter', social.twitterUrl, 'Twitter channel coming soon');
   setupActionButton('social-btn-telegram', social.telegramUrl, 'Telegram channel coming soon');
   setupActionButton('social-btn-telegram-hero', social.telegramUrl, 'Telegram channel coming soon');
+  setupActionButton('social-btn-telegram-final', social.telegramUrl, 'Telegram channel coming soon');
   setupActionButton('social-btn-explorer', token.explorerUrl, 'Robinhood Chain Explorer coming soon');
 }
 

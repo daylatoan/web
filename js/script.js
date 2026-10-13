@@ -38,8 +38,8 @@ const siteConfig = {
 
   // Official Social Channels
   social: {
-    twitterUrl: 'https://x.com', // Replace with official GSI X account when live
-    telegramUrl: 'https://t.me', // Replace with official GSI Telegram channel
+    twitterUrl: 'https://x.com/groksionhood',
+    telegramUrl: 'https://t.me/GrokSI_Portal',
     discordUrl: 'https://groksuperinteligence.online',
     dexScreenerUrl: 'https://groksuperinteligence.online',
     gitbookUrl: 'https://groksuperinteligence.online',
@@ -448,6 +448,7 @@ function initTokenModule() {
   setupActionButton('social-btn-twitter', social.twitterUrl, 'Twitter channel coming soon');
   setupActionButton('social-btn-telegram', social.telegramUrl, 'Telegram channel coming soon');
   setupActionButton('social-btn-telegram-hero', social.telegramUrl, 'Telegram channel coming soon');
+  setupActionButton('social-btn-telegram-final', social.telegramUrl, 'Telegram channel coming soon');
   setupActionButton('social-btn-explorer', token.explorerUrl, 'Robinhood Chain Explorer coming soon');
 }
 
