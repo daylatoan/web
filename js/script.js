@@ -29,7 +29,7 @@ const siteConfig = {
     name: 'Grok Super Intelligence',
     symbol: '$GSI',
     network: 'Robinhood',
-    contractAddress: null, // e.g., '0x...' or null if not yet deployed
+    contractAddress: '0xb21cd655aa1df032b9866eeccbf589d8ad90796e',
     tokenType: 'ERC-20 / Meme Coin',
     explorerUrl: 'https://groksuperinteligence.online', // Robinhood Chain Explorer
     swapUrl: 'https://groksuperinteligence.online',     // Uniswap v4
